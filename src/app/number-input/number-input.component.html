@@ -1,26 +1,18 @@
 <div>
-  <div class="col">
     <div class="col">
-      <label for="">First Number</label>
+        <div class="col">
+            <label for="">First Number</label>
+        </div>
+        <div class="col">
+            <input (input)="numberInput(firstNumber.value, 0)" type="number" id="firstNumber" #firstNumber />
+        </div>
     </div>
-    <div class="col">
-      <input
-        (input)="numberInput(firstNumber.value, 0)"
-        type="number"
-        #firstNumber
-      />
+    <div class="col mt-1">
+        <div class="col">
+            <label for="">Second Number</label>
+        </div>
+        <div class="col">
+            <input (input)="numberInput(secondNumber.value, 1)" type="number" id="secondNumber" #secondNumber />
+        </div>
     </div>
-  </div>
-  <div class="col mt-1">
-    <div class="col">
-      <label for="">Second Number</label>
-    </div>
-    <div class="col">
-      <input
-        (input)="numberInput(secondNumber.value, 1)"
-        type="number"
-        #secondNumber
-      />
-    </div>
-  </div>
 </div>
